@@ -18,9 +18,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     var timer:Timer?
     var milliseconds:Float = 40 * 1000 //50 секунд на выполнение
-    
-    var newGame = false
-    
+        
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -189,7 +187,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
             title  = "Поздравляем!"
             message = "Вы победили"
-            newGame = true
         }
         else {
             //Если время кончилось - проигрыш
@@ -199,7 +196,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
             title  = "Игра окончена"
             message = "Вы проиграли"
-            newGame = true
         }
         
         //Отображаем сообщение
@@ -221,8 +217,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func reset () {
-        if newGame {
-                    
             model = CardModel()
             cardArray = [Card]()
             cardArray = model.getCards()
@@ -231,7 +225,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             collectionView.reloadData()
             timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(timerElapsed), userInfo: nil, repeats: true)
             RunLoop.main.add(timer!, forMode: .common)
-        }
     }
 } //Конец ViewController
 
