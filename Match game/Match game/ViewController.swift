@@ -207,7 +207,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         //Отображаем сообщение
         let alert = UIAlertController (title: title,message: message, preferredStyle: .alert)
         let alertAction1 = UIAlertAction (title: "Ок", style: .default, handler: nil)
-        let alertAction2 = UIAlertAction (title: "Заного", style: .default, handler: {_ in self.reset()})
+        let alertAction2 = UIAlertAction (title: "Заново", style: .default, handler: {_ in self.reset()})
 
         
         alert.addAction(alertAction1)
