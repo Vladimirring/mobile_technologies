@@ -24,7 +24,7 @@
                                 <rect key="frame" x="44" y="0.0" width="808" height="393"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time remaining: 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ono-Mk-b9y">
-                                        <rect key="frame" x="0.0" y="0.0" width="808" height="35"/>
+                                        <rect key="frame" x="8" y="8" width="792" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="WTt-ak-Bzh"/>
                                         </constraints>
@@ -33,7 +33,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Iug-J6-g4P">
-                                        <rect key="frame" x="0.0" y="35" width="808" height="358"/>
+                                        <rect key="frame" x="8" y="43" width="792" height="342"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="02M-mQ-DW1">
                                             <size key="itemSize" width="158" height="224"/>
@@ -75,6 +75,7 @@
                                         </cells>
                                     </collectionView>
                                 </subviews>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

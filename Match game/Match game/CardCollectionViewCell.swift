@@ -48,6 +48,11 @@ class CardCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    func show() {
+        frontImageView.alpha = 1
+        backImageView.alpha = 1
+    }
+    
     func flip() {
         //Переворачиваем карточку
         UIView.transition(from: backImageView, to: frontImageView, duration: 0.3, options: [.transitionFlipFromBottom, .showHideTransitionViews], completion: nil)
